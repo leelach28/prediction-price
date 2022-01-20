@@ -8,7 +8,7 @@ import sklearn
 
 
 app = Flask(__name__)
-model = pickle.load(open(r'C:\\Users\\Pavan_Scottline\\Desktop\\prediction\\Houseprediction1.pkl',"rb"))
+model = pickle.load(open(r'Houseprediction1.pkl',"rb"))
 @app.route('/',methods=['GET'])
 def Home():
     return render_template('index2.html')
